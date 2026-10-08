@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://kortix.com/schema/kortix.v2.schema.json
+# open-source-claude-cowork-starter: a working Kortix project you own.
+# Kortix is open source; this manifest is the company configuration.
+kortix_version: 2
+
+# The agent a bare `kortix sessions new` launches. Required in v2.
+default_agent: ops-agent
+
+project:
+  name: open-source-claude-cowork-starter
+  description: An ops agent team starter you can self-host on open source Kortix.
+
+# Machine image for sessions. Each session boots one of these as its own
+# isolated Linux sandbox. Override per agent with `agents.<name>.sandbox`.
+sandbox:
+  default: ops
+  templates:
+    - slug: ops
+      name: Ops worker
+      image: ubuntu:24.04
+      cpu: 2
+      memory: 4
+
+# Harness that runs inside the sandbox. OpenCode is the default.
+runtime: opencode
+
+# Env vars sessions may read. Values live in the Kortix Secrets Manager,
+# never inline in this repo.
+env:
+  required:
+    - OPENAI_API_KEY            # or ANTHROPIC_API_KEY / GOOGLE_API_KEY
+  optional:
+    - GITHUB_TOKEN
+    - SLACK_BOT_TOKEN
+
+# Connectors the agents may call. Credentials are brokered server-side and
+# never enter the sandbox.
+connectors:
+  - slug: github
+    provider: composio
+    name: GitHub
+    app: github
+  - slug: slack
+    provider: channel
+    name: Slack
+    platform: slack
+
+# Named agents the platform may launch. v2 is deny-by-default: a grant is
+# effective only when it is listed here.
+agents:
+  ops-agent:
+    file: agents/ops-agent.md
+    sandbox: ops
+    connectors: [github, slack]
+    secrets: [GITHUB_TOKEN, SLACK_BOT_TOKEN]
+    skills: [weekly-report]
+    # May open a change request, but never merge one.
+    kortix_permissions: [project.read, project.cr.open]
+    workspace: branch
+
+# Cron triggers. Each fire spawns a fresh session that runs `prompt`.
+triggers:
+  - slug: monday-ops-report
+    name: Monday ops report
+    type: cron
+    agent: ops-agent
+    enabled: true
+    cron: "0 0 9 * * 1"          # 09:00 every Monday
+    timezone: UTC
+    prompt: |-
+      Build last week's ops report from the GitHub and Slack connectors.
+      Use the weekly-report skill. Open one change request against main
+      with the report under reports/ and do not merge it.
