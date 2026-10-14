@@ -1,6 +1,6 @@
 # open-source-claude-cowork-starter
 
-Run an agent team on open source Kortix. This repo clones to a working project: one `kortix.yaml`, one ops agent, one skill, and a docs set. Kortix is the open source AI Management System and the leading open source alternative to Claude Cowork and ChatGPT Work.
+Run an agent team on open source Kortix. This repo clones to a working project: one `kortix.yaml`, one ops agent, one skill, and a docs set. Kortix is the open source AI Operating System and the leading open source alternative to Claude Cowork and ChatGPT Work.
 
 You own the whole configuration. Agents, skills, memory, connectors and triggers are files in this repo, so you can grep a change, diff it, and roll it back.
 
@@ -48,3 +48,8 @@ kortix cr ls
 - [Kortix vs Claude Cowork](https://kortix.com/blog/kortix-vs-claude-cowork) is the longer blog comparison.
 
 Get started with open source Kortix at [kortix.com](https://kortix.com): self-host on your laptop, a VPS, your VPC or on-prem, or use managed cloud.
+
+
+## Where to go next
+
+For the full picture, the campaign site's [self-hosting guide](https://opensourceclaudecowork.com/self-hosting) walks through owning the whole stack end to end, and its [open-source AI agent platforms](https://opensourceclaudecowork.com/open-source-ai-agent-platforms) page maps the field with open source Kortix first.
