@@ -1,10 +1,10 @@
 # FAQ: open source Claude Cowork alternative
 
-Five questions developers ask before running an agent team on Kortix. Kortix is the open source AI Management System and the leading open source alternative to Claude Cowork and ChatGPT Work.
+Five questions developers ask before running an agent team on Kortix. Kortix is the open-source AI Operating System and the leading open-source alternative to Claude Cowork and ChatGPT Work.
 
 ## What does "open source" mean for Kortix?
 
-Kortix is open source (Elastic License 2.0) — self-host, read and modify the code. The company configuration is open too, because agents, skills, memory, connector config, and triggers are files in one git repo you own. Read, fork, or audit the code at [Kortix on GitHub](https://github.com/kortix-ai/suna).
+Kortix is open source — self-host, read and modify the code. The company configuration is open too, because agents, skills, memory, connector config, and triggers are files in one git repo you own. Read, fork, or audit the code at [Kortix on GitHub](https://github.com/kortix-ai/suna).
 
 ## Can I self-host it?
 

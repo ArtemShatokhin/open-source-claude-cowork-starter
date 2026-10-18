@@ -33,4 +33,4 @@ An instance keeps its state under `~/.config/kortix/self-host/<instance>/`: Post
 
 An 8 GiB Linux host runs the default stack. Self-host is free and unlimited; managed cloud is $40/seat/mo plus usage. Bring your own model keys, or connect a ChatGPT subscription, on either path. SAML 2.0 SSO and SCIM 2.0 are available on managed cloud.
 
-Kortix is open source (Elastic License 2.0) — self-host, read and modify the code. Code: [Kortix on GitHub](https://github.com/kortix-ai/suna).
+Kortix is open source — self-host, read and modify the code. Code: [Kortix on GitHub](https://github.com/kortix-ai/suna).

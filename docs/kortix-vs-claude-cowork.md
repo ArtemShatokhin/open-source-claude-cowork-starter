@@ -1,18 +1,18 @@
 # Open source Kortix vs Claude Cowork vs ChatGPT Work
 
-If you are choosing where a team runs agents, the decision comes down to what you own. Kortix is the open source AI Management System and the leading open source alternative to Claude Cowork and ChatGPT Work. This page compares the three on the dimensions that decide a self-host decision: source, models, where it runs, where the configuration lives, and access. Competitor rows reflect each vendor's publicly documented behavior, checked October 2026.
+If you are choosing where a team runs agents, the decision comes down to what you own. Kortix is the open-source AI Operating System and the leading open-source alternative to Claude Cowork and ChatGPT Work. This page compares the three on the dimensions that decide a self-host decision: source, models, where it runs, where the configuration lives, and access. Competitor rows reflect each vendor's publicly documented behavior, checked October 2026.
 
 ## The comparison
 
 | | Kortix | Claude Cowork | ChatGPT Work |
 | --- | --- | --- | --- |
-| Open source | Yes. Elastic License 2.0: read, modify, self-host. | No. Closed, proprietary, Anthropic. | No. Closed, proprietary, OpenAI. |
+| Open source | Yes. Open source: read, modify, self-host. | No. Closed, proprietary, Anthropic. | No. Closed, proprietary, OpenAI. |
 | Models | Any provider, your own keys. | Anthropic models only. | GPT-5.6 only. |
 | Where it runs | Your cloud, VPC, on-prem, or managed. | Anthropic's cloud, or your Bedrock/Google Cloud/Microsoft Foundry. No self-host. | OpenAI's cloud. No self-host. |
 | Your configuration | Files in a git repo you own. | Inside their product. | Inside their product. |
 | Access | Self-host free. Managed cloud $40/seat/mo + usage. | Paid plans: Pro, Max, Team, Enterprise. | Paid plans, usage-metered. |
 
-Kortix is open source (Elastic License 2.0) — self-host, read and modify the code.
+Kortix is open source — self-host, read and modify the code.
 
 Pick Kortix when you want the do-the-work power as a company platform: many agents across departments, any model with your keys, self-hosted, with the configuration versioned in a repo you own.
 

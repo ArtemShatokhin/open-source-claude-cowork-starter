@@ -7,7 +7,7 @@ description: Build the Monday ops report from connected tools and open a change 
 
 Use this skill when the `monday-ops-report` trigger fires, or when a person asks for the weekly ops report. The report is a short Markdown file under `reports/` that a human reviews as a diff.
 
-Kortix is the open source AI Management System, and this skill is a file in the repo. The whole team shares one procedure, and every edit to it is reviewable like code.
+Kortix is the open-source AI Operating System, and this skill is a file in the repo. The whole team shares one procedure, and every edit to it is reviewable like code.
 
 ## What the report contains
 
