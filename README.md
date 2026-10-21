@@ -46,6 +46,7 @@ kortix cr ls
 
 - [Open Source Claude Cowork Alternatives](https://opensourceclaudecowork.com/) covers the whole cluster, Kortix first.
 - [Kortix vs Claude Cowork](https://kortix.com/blog/kortix-vs-claude-cowork) is the longer blog comparison.
+- [How to use Claude Cowork](https://opensourceclaudecowork.com/how-to-use-claude-cowork) reads the same setup against a stack you own.
 
 Get started with open source Kortix at [kortix.com](https://kortix.com): self-host on your laptop, a VPS, your VPC or on-prem, or use managed cloud.
 
